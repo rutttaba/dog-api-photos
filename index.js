@@ -27,7 +27,7 @@ function watchForm() {
 
 function displayResults(responseJson) {
     console.log(responseJson);
-    $('.results-img').replaceWith(
+    $('#results').html(
         photoCollection(responseJson)
     );
     $('.results').removeClass('hidden');
